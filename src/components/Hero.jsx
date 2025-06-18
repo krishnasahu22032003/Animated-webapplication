@@ -1,4 +1,3 @@
-
 import { useRef, useState } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -15,7 +14,16 @@ const Hero = () => {
   const videoA = useRef(null);
   const videoB = useRef(null);
 
-  const getVidSrc = (index) => `/videos/hero-${index}.mp4`;
+  const getVidSrc = (index) => {
+    const urls = {
+      1: "https://res.cloudinary.com/dq6gs5w21/video/upload/v1750270962/hero-1_vs55j5.mp4",
+      2: "https://res.cloudinary.com/dq6gs5w21/video/upload/v1750270973/hero-2_jyjysk.mp4",
+      3: "https://res.cloudinary.com/dq6gs5w21/video/upload/v1750270950/hero-3_zgagqm.mp4",
+      4: "https://res.cloudinary.com/dq6gs5w21/video/upload/v1750270961/hero-4_sa5gol.mp4"
+    };
+    return urls[index];
+  };
+
   const getNextIndex = (index) => (index % totalVideos) + 1;
 
   const playNext = () => {
@@ -97,9 +105,9 @@ const Hero = () => {
         />
         <video
           ref={videoB}
-           src={getVidSrc(currentIndex)}
-           playsInline
+          src={getVidSrc(currentIndex)}
           autoPlay
+          playsInline
           loop
           muted
           className='absolute top-0 left-0 size-full object-cover transition-opacity duration-500'
@@ -119,7 +127,6 @@ const Hero = () => {
               playsInline
               muted
               className='size-64 object-cover rounded-lg'
-             
             />
           </div>
         </div>
@@ -133,10 +140,10 @@ const Hero = () => {
             <h1 className='special-font text-blue-100 pt-8 hero-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.15] tracking-tight max-w-fit'>
               UNLEASH <b>R</b>AGE
             </h1>
-          <p className="mb-5 max-w-64 font-robert-regular text-blue-50 leading-relaxed tracking-wide text-sm md:text-base">
-  Flames burn brighter at night<br />
-  Every breath could be your last
-</p>
+            <p className="mb-5 max-w-64 font-robert-regular text-blue-50 leading-relaxed tracking-wide text-sm md:text-base">
+              Flames burn brighter at night<br />
+              Every breath could be your last
+            </p>
             <Button
               id="watch-trailer"
               title="Slay Now"
@@ -146,9 +153,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
-          <h1 className='special-font hero-heading absolute bottom-5 right-10 text-black text-base sm:text-lg md:text-9xl lg:text-9xl'>
-          D<b>A</b>WN FALLS
-        </h1>
+      <h1 className='special-font hero-heading absolute bottom-5 right-10 text-black text-base sm:text-lg md:text-9xl lg:text-9xl'>
+        D<b>A</b>WN FALLS
+      </h1>
     </div>
   );
 };
