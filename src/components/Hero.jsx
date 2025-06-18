@@ -89,6 +89,7 @@ const Hero = () => {
           ref={videoA}
           src={getVidSrc(currentIndex)}
           autoPlay
+          playsInline
           loop
           muted
           className='absolute top-0 left-0 size-full object-cover transition-opacity duration-500'
@@ -96,7 +97,8 @@ const Hero = () => {
         />
         <video
           ref={videoB}
-          src=""
+           src={getVidSrc(currentIndex)}
+           playsInline
           autoPlay
           loop
           muted
@@ -114,9 +116,10 @@ const Hero = () => {
             <video
               src={getVidSrc(getNextIndex(currentIndex))}
               loop
+              playsInline
               muted
               className='size-64 object-cover rounded-lg'
-              playsInline
+             
             />
           </div>
         </div>
