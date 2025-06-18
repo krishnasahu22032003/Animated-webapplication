@@ -2,7 +2,7 @@
 import { useRef, useState } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import Button from './button';
+import Button from './Button';
 import { TiLocationArrow } from 'react-icons/ti';
 
 const totalVideos = 4;
