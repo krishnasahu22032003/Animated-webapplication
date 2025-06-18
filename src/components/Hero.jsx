@@ -16,10 +16,10 @@ const Hero = () => {
 
   const getVidSrc = (index) => {
     const urls = {
-      1: "https://res.cloudinary.com/dq6gs5w21/video/upload/v1750270962/hero-1_vs55j5.mp4",
-      2: "https://res.cloudinary.com/dq6gs5w21/video/upload/v1750270973/hero-2_jyjysk.mp4",
-      3: "https://res.cloudinary.com/dq6gs5w21/video/upload/v1750270950/hero-3_zgagqm.mp4",
-      4: "https://res.cloudinary.com/dq6gs5w21/video/upload/v1750270961/hero-4_sa5gol.mp4"
+      1: "https://res.cloudinary.com/dq6gs5w21/video/upload/f_auto,q_auto/v1750270962/hero-1_vs55j5.mp4",
+      2: "https://res.cloudinary.com/dq6gs5w21/video/upload/f_auto,q_auto/v1750270973/hero-2_jyjysk.mp4",
+      3: "https://res.cloudinary.com/dq6gs5w21/video/upload/f_auto,q_auto/v1750270950/hero-3_zgagqm.mp4",
+      4: "https://res.cloudinary.com/dq6gs5w21/video/upload/f_auto,q_auto/v1750270961/hero-4_sa5gol.mp4"
     };
     return urls[index];
   };
@@ -98,6 +98,7 @@ const Hero = () => {
           src={getVidSrc(currentIndex)}
           autoPlay
           playsInline
+            preload="auto"
           loop
           muted
           className='absolute top-0 left-0 size-full object-cover transition-opacity duration-500'
@@ -108,6 +109,7 @@ const Hero = () => {
           src={getVidSrc(currentIndex)}
           autoPlay
           playsInline
+            preload="auto"
           loop
           muted
           className='absolute top-0 left-0 size-full object-cover transition-opacity duration-500'
@@ -125,6 +127,7 @@ const Hero = () => {
               src={getVidSrc(getNextIndex(currentIndex))}
               loop
               playsInline
+                preload="auto"
               muted
               className='size-64 object-cover rounded-lg'
             />

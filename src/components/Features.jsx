@@ -37,6 +37,7 @@ const Bentocard = ({ src, title, description }) => {
       <video
         src={src}
         loop
+        preload="auto"
          playsInline
         muted
         autoPlay
@@ -72,7 +73,7 @@ const Features = () => {
 
  <Bentotilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
   <Bentocard
-    src="https://res.cloudinary.com/dq6gs5w21/video/upload/v1750270967/featuresss-1_k79rab.mp4"
+    src="https://res.cloudinary.com/dq6gs5w21/video/upload/f_auto,q_auto/v1750270967/featuresss-1_k79rab.mp4"
     title={
       <>Ete<b>r</b>nal Flame</>
     }
@@ -84,7 +85,7 @@ const Features = () => {
 <Bentotilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2" >
 
 <Bentocard
-  src="https://res.cloudinary.com/dq6gs5w21/video/upload/v1750270953/features-2_pk2bol.mp4"
+  src="https://res.cloudinary.com/dq6gs5w21/video/upload/f_auto,q_auto/v1750270953/features-2_pk2bol.mp4"
   title={<>Season <b>1</b>: The Beginning</>}
   description="Follow Tanjiro Kamado’s journey from tragedy to purpose as he joins the Demon Slayer Corps. Witness breathtaking battles, fierce demons, and the unbreakable bond between siblings in the season that started it all."
 />
@@ -92,7 +93,7 @@ const Features = () => {
 
 <Bentotilt className="bento-tilt_1 row-span-1 ms-0 md:col-span-1" >
 <Bentocard
-  src="https://res.cloudinary.com/dq6gs5w21/video/upload/v1750270934/feature-3_b1d1uk.mp4"
+  src="https://res.cloudinary.com/dq6gs5w21/video/upload/f_auto,q_auto/v1750270934/feature-3_b1d1uk.mp4"
   title={<>Season <b>2</b>: Entertainment Arc</>}
   description="Dive into the vibrant yet deadly Entertainment District alongside Tanjiro, Zenitsu, Inosuke, and the flamboyant Sound Hashira, Tengen Uzui. Face off against powerful Upper Rank demons in a battle that redefines strength, sacrifice, and style."
 />
@@ -100,7 +101,7 @@ const Features = () => {
 </Bentotilt>
 <Bentotilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0" >
   <Bentocard
-  src="https://res.cloudinary.com/dq6gs5w21/video/upload/v1750270938/feature-4_m0q2lw.mp4"
+  src="https://res.cloudinary.com/dq6gs5w21/video/upload/f_auto,q_auto/v1750270938/feature-4_m0q2lw.mp4"
   title={<>Season <b>3</b>: Swordsmith Arc</>}
   description="Venture into the hidden Swordsmith Village as Tanjiro joins forces with the Mist and Love Hashira. With ancient blades, evolving powers, and Upper Rank demons threatening all, Season 3 unveils secrets buried deep in steel and spirit."
 />
@@ -112,7 +113,7 @@ const Features = () => {
     </div>
 </Bentotilt>
 <Bentotilt className="bento-tilt_2" >
-<video src="https://res.cloudinary.com/dq6gs5w21/video/upload/v1750270950/hero-3_zgagqm.mp4"  loop muted autoPlay className="size-full object-cover object-center" />
+<video src="https://res.cloudinary.com/dq6gs5w21/video/upload/f_auto,q_auto/v1750270950/hero-3_zgagqm.mp4"  loop muted autoPlay className="size-full object-cover object-center" />
 </Bentotilt>
     </div>
     </div>
