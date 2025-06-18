@@ -37,7 +37,6 @@ const Bentocard = ({ src, title, description }) => {
       <video
         src={src}
         loop
-        preload="auto"
          playsInline
         muted
         autoPlay

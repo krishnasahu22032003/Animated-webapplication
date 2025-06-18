@@ -98,7 +98,6 @@ const Hero = () => {
           src={getVidSrc(currentIndex)}
           autoPlay
           playsInline
-            preload="auto"
           loop
           muted
           className='absolute top-0 left-0 size-full object-cover transition-opacity duration-500'
@@ -109,7 +108,6 @@ const Hero = () => {
           src={getVidSrc(currentIndex)}
           autoPlay
           playsInline
-            preload="auto"
           loop
           muted
           className='absolute top-0 left-0 size-full object-cover transition-opacity duration-500'
@@ -127,7 +125,6 @@ const Hero = () => {
               src={getVidSrc(getNextIndex(currentIndex))}
               loop
               playsInline
-                preload="auto"
               muted
               className='size-64 object-cover rounded-lg'
             />
