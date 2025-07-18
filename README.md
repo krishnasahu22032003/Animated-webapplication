@@ -2,7 +2,7 @@
 
 An immersive, cinematic, scroll-triggered landing page inspired by **Demon Slayer: Kimetsu no Yaiba**. Built with **React**, **GSAP**, and **Tailwind CSS**, this site recreates the intensity and beauty of the anime using dual video transitions, hover glow effects, and responsive UI design.
 
-![Preview](./demon-slayer-preview.png)
+![Preview](/img/demon-slayer-preview.png)
 
 ---
 

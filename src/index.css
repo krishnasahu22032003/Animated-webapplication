@@ -132,7 +132,7 @@ body {
     font-family: var(--font-general);
     font-size: 0.75rem;
     text-transform: uppercase;
-    color: #e0f2fe;
+    color: white;
     cursor: pointer;
   }
 
